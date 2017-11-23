@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- LinearLayout layouts views lineary (either horizontaly or verticaly). -->
+<!-- LinearLayout contains views. -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- LinearLayout layouts views lineary (either horizontaly or verticaly). -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+    <!-- ImageView displays an arbitrary image, such as an icon. -->
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <!-- LinearLayout layouts views lineary (either horizontaly or verticaly). -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+    <!-- TextView displays text to the user. -->
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- TextView displays text to the user. -->
+    <TextView
+        android:id="@+id/tv_biografija"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Spinners provide a quick way to select one value from a set. -->
+    <Spinner
+        android:id="@+id/sp_film"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Rating bar displays rating with stars to the user. -->
+    <RatingBar
+        android:id="@+id/rb_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"/>
+
+    <!-- Button can be pressed, or clicked, by the user to perform an action. -->
+    <Button
+        android:id="@+id/btn_like"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_detail_button_like"/>
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/detail_heading"
+        android:textSize="20sp"/>
+
+    <WebView
+        android:id="@+id/pageInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/> -->
+
+
+
+</LinearLayout>
